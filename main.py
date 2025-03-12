@@ -1,11 +1,11 @@
 import pickle
-from fastapi import FASTAPI
+import fastapi
 from pydantic import BaseModel
 
 with open('/workspaces/customer-sentiment-analysis/model.pkl', 'rb') as file:
     model = pickle.load(file)
 
-app = FASTAPI()
+app = fastapi.FastAPI()
 
 class ReviewInput(BaseModel):
     text : str
