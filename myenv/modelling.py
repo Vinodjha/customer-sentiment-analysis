@@ -7,8 +7,19 @@ from sklearn.feature_extraction.text import CountVectorizer,TfidfTransformer
 nltk.download('stopwords')
 nltk.download('punkt')
 
+#Cleaning the data before putting it into a dataframe. I had to remove the several quotes in the data before it could parse correctly
 
-data  = pd.read_csv('data/customer-review.csv')
+# File path (update with actual file path)
+file_path = "/workspaces/customer-sentiment-analysis/data/customer-review.csv"
+
+# Read file, remove all quotes, and overwrite the file
+with open(file_path, "r", encoding="utf-8") as f:
+    data = f.read().replace('"', '')
+
+with open(file_path, "w", encoding="utf-8") as f:
+    f.write(data)
+
+data  = pd.read_csv(file_path)
 print(data.head())
 
 def preprocess_text(text):
