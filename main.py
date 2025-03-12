@@ -2,7 +2,7 @@ import pickle
 from fastapi import FASTAPI
 from pydantic import BaseModel
 
-with open('model.pkl', 'rb') as file:
+with open('/workspaces/customer-sentiment-analysis/model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 app = FASTAPI()
