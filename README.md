@@ -1,2 +1,2 @@
 # customer-sentiment-analysis
-A resapi based customer sentiment analysis deployed on Render
+A RestApi based customer sentiment analysis deployed on Render
