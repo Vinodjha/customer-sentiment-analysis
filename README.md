@@ -106,7 +106,7 @@ POST /predict
 Feel free to contribute! Fork the repo, create a feature branch, and submit a pull request.
 
 ## License
-This project is licensed under the MIT License.
+This project is an open-source and anyone is free to use it.
 
 ## Contact
 For inquiries, reach out via GitHub Issues or email: **v.jha85@gmail.com**
